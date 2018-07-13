@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/activity_margin"
+    android:padding="@dimen/activity_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textStyle="bold"
+            tools:text="Product Name" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:fontFamily="sans-serif"
+            android:layout_alignRight="@id/name"
+            android:layout_marginLeft="@dimen/activity_margin">
+
+            <TextView
+                android:id="@+id/dollar_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$"
+                android:textColor="@color/colorAccent"
+                android:textAppearance="?android:textAppearanceMedium"
+                tools:text="$"/>
+
+            <TextView
+                android:id="@+id/prodPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:textAppearance="?android:textAppearanceMedium"
+                tools:text="2.99"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:fontFamily="sans-serif"
+        android:paddingBottom="8dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qty:  "
+            android:textColor="@android:color/black"
+            android:textAppearance="?android:textAppearanceMediumInverse"/>
+
+        <TextView
+            android:id="@+id/prodQty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMediumInverse"
+            android:textColor="@android:color/black"
+            tools:text="10"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sale_button"
+        android:layout_gravity="center_vertical"
+        android:layout_width="@dimen/sale_button_width"
+        android:layout_height="@dimen/sale_button_height"
+        android:text="Sale"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>
+
+
